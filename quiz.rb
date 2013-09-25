@@ -1,12 +1,3 @@
-# # Question 1: Create a method called 'square' which takes a parameter `x` and squares it
-
-<<<<<<< HEAD
-# # Question 2: Create a method called 'parse_true', which takes a string parameter called 
-# `questionable_string` and if the text of the string is 'true' then return true, else return false. 
-
-# # Question 3. Create a method called `is_prime`, which calculates if an input parameter `x` is prime, 
-# and return true or false. Just brute force this and don't try to be too smart about it. 
-
 def square(x)
   x * x
 end
@@ -19,28 +10,17 @@ def to_bool(questionable_string)
   end
 end
 
-# def is_prime(x)
-# 	n = 2.0
-# 	while n < x
-# 	if x % n != 0
-# 		n += 1
-# 	else 
-# 		return true
-# 	end
-# end
-
-
 def is_prime(x)
-  for n in (2...x) do 
-  	if x.to_float % n == 0.0
-  	  return false
-  	else
-  	  return true
-  	end
+  primeness = true
+  for n in (2...(x / 2)) do 
+  	if x % n == 0
+  	  primeness = false 
+    end
   end
+  return primeness
 end
 
-# Test code:
+# # Test code:
 
 # puts "5 squared is "
 # puts square(5)
@@ -69,7 +49,4 @@ end
 # else 
 # 	puts "is working."
 # end
-=======
-# Question 2: Create a method called 'to_bool', which takes a string parameter called `questionable_string` and if the text of the string is 'true' then return true, else return false. 
->>>>>>> e8140dc4107be649763dcca26af35381453a9432
 
