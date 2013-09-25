@@ -18,12 +18,23 @@ def to_bool(questionable_string)
   end
 end
 
+# def is_prime(x)
+# 	n = 2.0
+# 	while n < x
+# 	if x % n != 0
+# 		n += 1
+# 	else 
+# 		return true
+# 	end
+# end
+
+
 def is_prime(x)
   for n in (2...x) do 
-  	if x % n == 0
-  	  true
+  	if x.to_float % n == 0.0
+  	  n += 1
   	else
-  	  false
+  	  return true
   	end
   end
 end
