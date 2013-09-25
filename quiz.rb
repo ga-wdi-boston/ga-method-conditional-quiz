@@ -24,7 +24,7 @@ def is_prime(x)
 	for n in 2..(x - 1)
    		if (x % n) == 0
     		return false
-    	end
+    	else
     		return true
     	end
     end
