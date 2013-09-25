@@ -1,7 +1,8 @@
 # Question 1: Create a method called 'square' which takes a parameter `x` and squares it
 
 def square(x)
-	x ** 2
+#should use return because you can reuse the returned value later
+	return x ** 2
 end
 
 
@@ -27,7 +28,7 @@ def is_prime(x)
 			return false
 		end
 	end
-
-	true
+#should use return because you can reuse the returned value later
+	return true
 end
 
