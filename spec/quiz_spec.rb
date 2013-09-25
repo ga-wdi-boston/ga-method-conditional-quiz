@@ -50,7 +50,6 @@ describe "is_prime" do
   end
 
   it "should return true for prime numbers" do
-    expect(is_prime 1).to be true
     expect(is_prime 3).to be true
     expect(is_prime 5).to be true
     expect(is_prime 7).to be true
@@ -68,7 +67,6 @@ describe "is_prime" do
   end
 
   it "should return false for all other numbers" do
-    expect(is_prime 2).to be false
     expect(is_prime 4).to be false
     expect(is_prime 10).to be false
     expect(is_prime 100).to be false
