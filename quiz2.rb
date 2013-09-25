@@ -2,8 +2,10 @@
 
 # Question 1
 def square(x)
-	x = x ** 2
+	x ** 2
 end
+
+puts square 2
 
 # Question 2
 
@@ -15,14 +17,19 @@ def to_bool(questionable_string)
 	end
 end
 
+puts to_bool "xxxx"
+
 
 # Question 3
+
 def is_prime(x)
-	for d in 2..(x - 1)
-   		if (n % d) == 0
+	for n in 2..(x - 1)
+   		if (x % n) == 0
     		return false
     	else
     		return true
     	end
-   end
+    end
 end
+
+puts is_prime 100
