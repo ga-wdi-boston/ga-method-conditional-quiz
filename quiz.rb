@@ -11,9 +11,9 @@ def to_bool(questionable_string)
 end
 
 def is_prime(x)
-  return true if x == 1 || x == 2 
+  return true if x == 1
 	factors = 0
-  for n in (2...x) do 
+  for n in (2..(x / 2)) do 
   	if x % n == 0
   	  factors += 1
     end
