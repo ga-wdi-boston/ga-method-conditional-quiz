@@ -3,10 +3,11 @@
 def square(x)
 	x = x.to_f
 	x = x**2
-	puts x
 end
 
 # Question 2: Create a method called 'parse_true', which takes a string parameter called `questionable_string` and if the text of the string is 'true' then return true, else return false. 
+
+# Question 2: Create a method called 'to_bool', which takes a string parameter called `questionable_string` and if the text of the string is 'true' then return true, else return false. 
 
 def to_bool(questionable_string)
 	if questionable_string.downcase == 'true'
