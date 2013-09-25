@@ -32,7 +32,7 @@ end
 def is_prime(x)
   for n in (2...x) do 
   	if x.to_float % n == 0.0
-  	  n += 1
+  	  return false
   	else
   	  return true
   	end
@@ -58,14 +58,14 @@ end
 # end
 
 # if is_prime(7)
-# 	puts "7 is prime."
+# 	puts "it's working."
 # else 
-# 	puts "7 is not prime."
+# 	puts "7 is totally prime. it's busted."
 # end
 
 # if is_prime(30)
-# 	puts "30 is prime."
+# 	puts "30 ain't prime. it's busted."
 # else 
-# 	puts "30 is not prime."
+# 	puts "is working."
 # end
 
