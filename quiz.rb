@@ -9,21 +9,24 @@ def square(x)
 end
 
 def to_bool(questionable_string)
-	if questionable_string.is_a? String
-		return "true"
-	else "false"
+	if questionable_string == "true"
+		return true
+	else false
 	end
 end
 
 def is_prime(x)
-	counter = 2
-	while (x < counter) && (x % counter) != 0
-		counter = counter + 1
-		puts "#{x} is prime"
+  for d in 2..(x - 1)
+	if (x % d) == 0
+    return false
 	end
+  end	
+  return true
 end
+
+
 
 
 puts square(2)
 puts to_bool(5)
-puts is_prime(7)
+puts is_prime(33)
