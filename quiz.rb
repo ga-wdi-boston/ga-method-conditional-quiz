@@ -21,10 +21,13 @@ end
 
 
 def is_prime(x)
-	if x % 2 = 0 && x % 3 = 0
-		return false
-	else
-		return true
+	
+	(2...x).each do |a|
+		if x % a == 0 
+			return false
+		end
 	end
+
+	true
 end
 
