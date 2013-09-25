@@ -1,6 +1,5 @@
 # # Question 1: Create a method called 'square' which takes a parameter `x` and squares it
 
-<<<<<<< HEAD
 # # Question 2: Create a method called 'parse_true', which takes a string parameter called 
 # `questionable_string` and if the text of the string is 'true' then return true, else return false. 
 
@@ -32,7 +31,7 @@ end
 
 def is_prime(x)
   for n in (2...x) do 
-  	if x.to_float % n == 0.0
+  	if x % n == 0.0
   	  return false
   	else
   	  return true
@@ -40,7 +39,7 @@ def is_prime(x)
   end
 end
 
-# Test code:
+# # Test code:
 
 # puts "5 squared is "
 # puts square(5)
@@ -69,7 +68,4 @@ end
 # else 
 # 	puts "is working."
 # end
-=======
-# Question 2: Create a method called 'to_bool', which takes a string parameter called `questionable_string` and if the text of the string is 'true' then return true, else return false. 
->>>>>>> e8140dc4107be649763dcca26af35381453a9432
 
