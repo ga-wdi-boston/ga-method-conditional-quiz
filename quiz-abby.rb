@@ -11,24 +11,16 @@ def to_bool(questionable_string)
 end
 
 def is_prime(x)
-  return true if x == 1 || x == 2 
-	factors = 0
   for n in (2...x) do 
-  	if x % n == 0
-  	  factors += 1
-    end
-  end
-  if factors == 0 
-  	return true
-  else 
-  	return false
+  	if x % n == 0.0
+  	  return false
+  	else
+  	  return true
+  	end
   end
 end
 
 # # Test code:
-x = rand(100)
-puts "Testing primeness on #{x}:"
-puts is_prime(x)
 
 # puts "5 squared is "
 # puts square(5)
