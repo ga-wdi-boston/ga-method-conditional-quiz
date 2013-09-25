@@ -21,10 +21,10 @@ end
 
 
 def is_prime(x)
-	if x.prime? == true
-		return true
-	else
+	if x % 2 = 0 && x % 3 = 0
 		return false
+	else
+		return true
 	end
 end
 
