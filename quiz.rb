@@ -26,10 +26,3 @@ def is_prime(x)
 	end 
 	return true
 end
-	# for n in 2...(x - 1)
-	# 	if (x % n) == 0 && n > 1 && n < x
-	# 		return false
-	# 	else
-	# 		return true
-	# 	end
-	# end
