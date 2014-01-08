@@ -26,4 +26,8 @@ def is_prime(x)
 	return true
 end
 
+puts square(2)
+
+puts to_bool("true")
+
 puts is_prime(67)
