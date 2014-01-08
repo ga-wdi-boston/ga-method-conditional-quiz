@@ -18,13 +18,13 @@ end
 # Question 3. Create a method called `is_prime`, which calculates if an input parameter `x` is prime, and return true or false. Just brute force this and don't try to be too smart about it.
 
 def is_prime(x)
-	tests = [2..x]
+	tests = [2..x.to_i]
 	tests.each do |num|
 		if x % num == 0
 			return false
-		else
-			return true
 		end
+	end
+	return true
 end
 
 
@@ -32,6 +32,9 @@ end
 def give_answer(answer)
 	puts answer
 end
+
+answer = is_prime(5)
+give_answer(answer)
 
 
 
