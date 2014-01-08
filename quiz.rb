@@ -19,7 +19,7 @@ end
 
 def is_prime(x)
 	tests = [2..x]
-	tests.each |num|
+	tests.each do |num|
 		if x % num == 0
 			return false
 		else
