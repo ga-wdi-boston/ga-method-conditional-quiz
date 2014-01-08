@@ -4,7 +4,7 @@ def square(x)
 end
 # Question 2: Create a method called 'to_bool', which takes a string parameter called `questionable_string` and if the text of the string is 'true' then return true, else return false. 
 def to_bool(questionable_string)
-	if (ture == questionable_string)
+	if ("ture" == questionable_string)
 		return true
 	else
 		return false
@@ -19,6 +19,7 @@ def is_prime(x)
 		return false
 	end
 	return true
+	end
 end
 
 def operation
@@ -29,4 +30,15 @@ def yield_output(output)
 	puts output
 end
 
-num1 = gets.chomp.to_i
+# num1 = gets.chomp.to_i
+# square_result = square(num1)
+# yield_output square_result
+
+# string = gets.chomp
+# to_bool_result = to_bool(string)
+# yield_output to_bool_result
+
+num2 = gets.chomp.to_i
+is_prime_result = is_prime(num2)
+yield_output is_prime_result
+
