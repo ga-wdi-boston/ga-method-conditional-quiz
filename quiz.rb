@@ -18,5 +18,5 @@ def is_prime?(x)
       return false
     end
   end
-  return true
+  true
 end
