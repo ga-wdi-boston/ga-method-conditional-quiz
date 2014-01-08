@@ -18,19 +18,14 @@ def is_prime(x)
 	return true
 end
 
-def yield_output(output)
-	puts output
-end
-
 num1 = gets.chomp.to_i
-square_result = square(num1)
-yield_output square_result
+puts square(num1)
+
 
 string = gets.chomp
-to_bool_result = to_bool(string)
-yield_output to_bool_result
+puts to_bool(string)
+
 
 num2 = gets.chomp.to_i
-is_prime_result = is_prime(num2)
-yield_output is_prime_result
+puts is_prime(num2)
 
