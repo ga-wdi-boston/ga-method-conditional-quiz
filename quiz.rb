@@ -1,3 +1,4 @@
+require 'pry'
 # Question 1: Create a method called 'square'
 # which takes a parameter `x` and squares it
 def square(x)
@@ -7,6 +8,7 @@ end
 # which takes a string parameter called `questionable_string`
 # and if the text of the string is 'true' then return true,
 # else return false.
+binding.pry
 def too_bool("questionable_string")
   return true if "#{questionable_string}" == true
   else return false
@@ -15,4 +17,7 @@ end
 # which calculates if an input parameter `x` is prime,
 # and return true or false.
 # Just brute force this and don't try to be too smart about it.
-
+def is_prime(x)
+  return true if x.prime? == true
+  else false
+end
