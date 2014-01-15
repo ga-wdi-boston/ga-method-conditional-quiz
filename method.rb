@@ -1,8 +1,7 @@
 def square_a_number(x)
-	x = gets.chomp
-	squared_number = x.to_i * x.to_i
-	puts squared_number
+	y = x * x
+	puts "#{y}"
 end
 
-square_a_number
+square_a_number(10)
 

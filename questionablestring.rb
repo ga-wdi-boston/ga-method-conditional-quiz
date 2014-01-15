@@ -1,8 +1,9 @@
-def to_bool()
-		if questionable_string == true
-					puts "true"
-		else
-					puts "false"
+def to_bool(questionable_string)
+	if questionable_string == "yes"
+		puts "true"
+ else
+ 		puts "false"
+ end
 end
 
-to_bool
+ to_bool("yes")
